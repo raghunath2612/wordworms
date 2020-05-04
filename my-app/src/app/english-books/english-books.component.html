@@ -1,0 +1,19 @@
+<div class="for-pad">
+    <div class="container-fluid">
+        <div class="row">
+            <div *ngFor="let contact of contacts">
+            <div class="col">
+                <div *ngIf="lang==='all'">
+                    <a [routerLink]="['/read-book',contact._id,1]"> <img src="{{contact.image}}" alt=""></a>
+                </div>
+                <div *ngIf="contact.language===lang">
+                    <a [routerLink]="['/read-book',contact._id,1]"> <img src="{{contact.image}}" alt=""></a>
+                </div>
+                <div *ngIf="lang===contact.genre">
+                    <a [routerLink]="['/read-book',contact._id,1]"> <img src="{{contact.image}}" alt=""></a>
+                </div>
+            </div>
+    </div>
+</div>
+</div>
+</div>

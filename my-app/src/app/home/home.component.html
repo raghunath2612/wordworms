@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Domine|Libre+Franklin&display=swap" rel="stylesheet">
+
+  <title>Boook World</title>
+</head>
+<body>
+  <div class="starting">
+    <div class="row under">
+      <div class="col">
+        <h2 style="color:midnightblue; font-family: 'Domine', serif;">Welcome to BookWorld</h2>
+        <h3 style="font-family: 'Libre Franklin', sans-serif;">
+          The most-loved social storytelling platform by all age groups
+        </h3>
+        <h5 style="font-family: 'Libre Franklin', sans-serif;">
+          BookWorld connects a global community of readers and writers through the power of story.
+        </h5>
+        <button class="btn btn-sm custbtn"  [routerLink]="['/books','all']">Start Reading</button>
+        <button class="btn btn-sm custbtn" [routerLink]="['/write-book']">Start Writing</button>
+
+      </div>
+      <div class="col">
+        <img src="/assets/hmimage.jpg" class="hmimage" style="width:100%" alt="image missing!!">
+      </div>
+    </div>
+  </div>
+
+  <div class="middle">
+    <div class="row middle1">
+      <div class="col">
+        <img src="/assets/middleimage.jpg" style="width: 100%; height:80%" alt="image missing!!">
+      </div>
+      <div class="col">
+        <h3 style=" color:midnightblue; font-family: 'Domine', serif;">BookWorld Studios</h3>
+        <h5 style="font-family: 'Libre Franklin', sans-serif;">
+          BookWorld Studios discovers untapped, unsigned, and talented writers on BookWorld and connects them to global multi-media entertainment companies.
+        </h5>
+      </div>
+    </div>
+    <div class="row middle2">
+
+      <div class="col">
+        <h3 style=" color:midnightblue; font-family: 'Domine', serif;">BookWorld Books</h3>
+        <h5 style="font-family: 'Libre Franklin', sans-serif;">
+          Your voice belongs on bookshelves
+        </h5>
+        <h5 style="font-family: 'Libre Franklin', sans-serif;">
+          Books aspires to recognize and reflect diverse voices by taking Bookworld stories to published book and onto bookshelves around the world.
+        </h5>
+      </div>
+      <div class="col">
+        <img src="/assets/middle1image.jpg" class="hmimage2" style="height:100%" alt="image missing!!">
+      </div>
+
+    </div>
+
+  </div>
+</body>
+</html>

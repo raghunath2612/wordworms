@@ -1,0 +1,18 @@
+
+.mynav{
+    margin-left: 9em;
+    margin-right: 9em;
+    padding: 0%;
+    background-color: inherit!important;
+}
+
+.columns{
+    padding: 1.5%;
+}
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+a.hover{
+    color: black;
+}

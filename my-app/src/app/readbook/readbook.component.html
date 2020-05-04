@@ -1,0 +1,65 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!doctype html>
+<html lang="pt-br">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <head>
+    <title>Hairloss Blocker 2.0 = 60% Desconto</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="script.js"></script>
+  </head>
+  <body ng-app="angular_split">
+<div class="reader" *ngFor="let contact of contacts">
+    <div *ngIf="contact._id===id">
+  	<div class="header">
+	  	<div class="container">
+	  		<div class="row">
+	  			<div>
+            <h2>{{contact.name}}</h2>
+	  			</div>
+	  		</div>
+	  	</div>
+  	</div>
+  	<div class="content">
+  		<div class="container-fluid">
+  			<div class="row">
+  				<div class="col-md-2">
+  					<div class="control-box p-3">
+                        <b>Author:</b>
+  						<p>{{contact.author}}</p>
+  					</div>
+  				</div>
+  				<div class="col-md-10">
+  					<div class="control-box p-3 main-content">
+                        <p>{{contact.story|slice:0+((num-1)*7000):7000+(num-1)*7000}}</p>
+            </div>
+
+          </div>
+          <div class="buttons" *ngFor="let item of [].constructor(math.ceil(contact.story.length/6000)+1); let i = index">
+            <div *ngIf="i!==0">
+              <div *ngIf="i==num">
+                <button [routerLink]="['/read-book',contact._id,i]" style="color: blue;" class="button button5"><b>{{i}}</b></button>
+              </div>
+              <div *ngIf="i!=num">
+                <button [routerLink]="['/read-book',contact._id,i]" class="button button5"><b>{{i}}</b></button>
+              </div>
+
+            </div>
+            </div>
+      </div>
+        
+  		</div>
+  	</div>
+    
+    </div>
+    </div>
+  </body>
+</html>
+
