@@ -7,8 +7,9 @@ Steps to execute this project
 1.       $ npm i
 2.       $ nodemon index.js
 3.       The node server will start on http://localhost:3000/
-4.       $ cd my-app
+4.       Open new terminal
+5.       $ cd my-app
 6.       $ npm i
-5.       $ ng serve
-7.       The angular server will host on http://localhost:4200/
-8.       now open http://localhost:4200/
+7.       $ ng serve
+8.       The angular server will host on http://localhost:4200/
+9.       now open http://localhost:4200/
